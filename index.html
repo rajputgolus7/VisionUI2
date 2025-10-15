@@ -47,6 +47,149 @@
             padding: 20px;
         }
     }
+        .pricing-universe {
+  text-align: center;
+  width: 100%;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.title-wow {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitle-chill {
+  color: #333;
+  margin-bottom: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.billing-toggle {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  display: inline-flex;
+  margin-bottom: 40px;
+  padding: 5px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.bill-btn {
+  border: none;
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bill-btn.active-btn {
+  background: #0d9e6a;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(13, 158, 106, 0.3);
+}
+
+.bill-btn:hover {
+  transform: scale(1.05);
+}
+
+.price-galaxy {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.price-card {
+  background: #fff;
+  border-radius: 20px;
+  width: 300px;
+  height: 450px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.price-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.price-card h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.plan-tag {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.price-money {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  line-height: 1.8;
+  color: #333;
+}
+
+.save-box {
+  display: inline-block;
+  background: #caffbf;
+  color: #006d77;
+  padding: 6px 15px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.chill-free {
+  filter: hue-rotate(0deg);
+}
+
+.mega-pro {
+  background: linear-gradient(180deg, #94fadb 0%, #34d399 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.mega-pro::before {
+  content: "";
+  position: absolute;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+}
+
+.boss-business {
+  background: #f8fff1;
+  border: 2px solid #d0f0c0;
+}
+
+.boss-business:hover {
+  background: #e6ffed;
+  transform: translateY(-10px) scale(1.03);
+}
 </style>
 </head>
 <body>
@@ -150,6 +293,48 @@
 
     <img src="another.png" style="width:100%;">
     <img src="t2.png" style="width:100%"></center>
+    <div class="price-galaxy">
+      <!-- Free Plan -->
+      <div class="price-card chill-free">
+        <h2>Free</h2>
+        <p class="plan-tag">Have a go and test your superpowers</p>
+        <h1 class="price-money">$0</h1>
+        <ul>
+          <li>✅ 2 Users</li>
+          <li>✅ 2 Files</li>
+          <li>✅ Public Share & Comments</li>
+          <li>✅ Chat Support</li>
+        </ul>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="price-card mega-pro">
+        <h2>Pro</h2>
+        <p class="plan-tag">Experiment the power of infinite possibilities</p>
+        <h1 class="price-money">$8</h1>
+        <div class="save-box">Save $50 a year</div>
+        <ul>
+          <li>✅ 4 Users</li>
+          <li>✅ All Apps</li>
+          <li>✅ Unlimited Editable Exports</li>
+          <li>✅ Folders & Collaboration</li>
+        </ul>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="price-card boss-business">
+        <h2>Business</h2>
+        <p class="plan-tag">Unveil new superpowers and join the Design League</p>
+        <h1 class="price-money">$16</h1>
+        <ul>
+          <li>✅ All the features of Pro plan</li>
+          <li>✅ Account Success Manager</li>
+          <li>✅ Single Sign-On (SSO)</li>
+          <li>✅ Co-conception Program</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 <div class="footer my-3">
     <div class="row my-3">
         <div class="col-lg-6 text-light left_box">
@@ -286,6 +471,7 @@
 </body>
 
 </html>
+
 
 
 

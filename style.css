@@ -38,9 +38,8 @@ body{
     font-weight:600;
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
-    background-color: lime;
 }
-.ops :hover{
+.ops p:hover{
     color: black;
 }
 .login{
@@ -135,4 +134,5 @@ body{
     font-size: 15px;
 
 }
+
 

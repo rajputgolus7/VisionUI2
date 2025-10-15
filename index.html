@@ -22,9 +22,12 @@
         font-size: 80px;
     }
     .people_img{
-        height: 60%;
+        /* Using max-width: 100% is better for responsiveness */
+        max-width: 100%;
+        height: auto;
     }
     .left_box{
+        /* Original styles that will be overridden by responsive CSS, but kept for high-level structure */
         margin-left: 7%;
         width:50%;
     }
@@ -33,7 +36,16 @@
         font-size: 50px;
     }
     .right_box{
-        width:0%
+        /* Removed fixed width and replaced with auto/bootstrap columns */
+        width: auto;
+    }
+    /* Media Query for left_box width adjustment on smaller screens (copied from previous response for context) */
+    @media (max-width: 768px) {
+        .left_box {
+            margin-left: 0;
+            width: 100%;
+            padding: 20px;
+        }
     }
 </style>
 </head>
@@ -62,36 +74,80 @@
         <div class="box">
             <p class="p1">We're here to Increase your productivity</p>
         </div>
-    <div class="hero_image">
-        <img src="hero.jpg" alt="hero" class="hero_image_main">
-    </div>
+        <div class="hero_image">
+            <img src="hero.jpg" alt="hero" class="hero_image_main">
+        </div>
     </div>
     <div class="more_than">
         <p>
             More than 25,000 teams use Collabs
         </p>
     </div>
-    <div class="logos">
-        <img src="">
-    </div>
+    
     <div id="logos">
-        <img src="/logos.png">
+        <img src="logos.png">
     </div>
-    <div class="how_we_support">
-        <div>
-            <p>
-                How we support our partner all over the world
-            </p>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="page2">
+        <div class="how_we_support">
+            <div>
+                <p>
+                    How we support our<br>
+                    partner all over the world
+                </p>
+            </div>
+            <div id="inner_desc">
+                <p>
+                    Saas become a common delivery model for amny bussiness application, including
+                    office software, messaging software, payroll processing software, DBMS software,
+                    management software
+                </p>
+                <br>
+                <br>
+                <br>
+                <div id="rating">
+                    <img src="rating_page2.png">
+                </div>
+            </div>
         </div>
+        <div class="publish_logos">
+            <img>
+        </div>
+        <div id="publishing">
+            <div>
+                <h1 id="head1">
+                    <img src="publishing.png">Publishing
+                </h1>
+                <h4 id="head4">
+                    Plan, collaborate, and publishing oyur content<br>
+                    that drives meaningful engagement and growth<br>
+                    for your brand
+                </h4>
+                <h1 id="head1">
+                    <img src="analytics.png">Analystics
+                </h1>
+                <h4 id="head4">
+                    Analyze your performance and create gorgeous
+                    report
+                </h4>
+                <h1 id="head1">
+                    <img src="engagement.png"> Engagement
+                </h1>
+                <h4 id="head4">
+                    Quickly navigate you and engage with your
+                    audience
+                </h4>
+            </div>
+        </div>
+
+
     </div>
-    <div id="lower_desc">
-      
-            Saas become a common delivery model for amny bussiness application, including
-            office software, messaging software, payroll processing software,DBMS software,
-            management software
-        
-    </div>
-    <center>
+
     <img src="another.png" style="width:100%;">
     <img src="t2.png" style="width:100%"></center>
 <div class="footer my-3">
@@ -230,6 +286,7 @@
 </body>
 
 </html>
+
 
 
 

@@ -1,0 +1,39 @@
+.more_than{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.logos{
+    align-items: center;
+}
+.page2{
+    display: flex;
+}
+
+.how_we_support{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    width: 50%;
+    padding: 90px;
+}
+#inner_desc{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    color: rgb(158, 158, 158);
+}
+#publishing{
+    text-align: left;
+    width: 50%;
+    padding: 120px 0;
+}
+#head1{
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+}
+#head4{
+    color: rgb(158, 158, 158);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 15px;
+}
